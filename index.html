@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Automata - Simulator PDA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <h1>PDA AUTOMATA ENGINE</h1>
+            <p>Laboratorium Teori Bahasa dan Otomata</p>
+        </header>
+
+        <main class="dashboard">
+  
+    <section class="panel info-panel">
+        <div class="panel-header">Spesifikasi Mesin</div>
+        <div class="specs-grid">
+            <div class="spec-item"><span>Bahasa:</span> a^n b^n (n >= 1)</div>
+            <div class="spec-item"><span>States:</span> q0, q1, q2, q3</div>
+            <div class="spec-item"><span>Alfabet:</span> {a, b}</div>
+            <div class="spec-item"><span>Simbol Stack:</span> {Z, A}</div>
+        </div>
+    </section>
+
+    <section class="panel interaction-panel">
+        <div class="input-area">
+            <input type="text" id="input-string" placeholder="Masukkan urutan string (contoh: aaabbb)">
+            <button onclick="prosesPDA()" id="btn-run">ANALISIS STRING</button>
+        </div>
+        
+        <div id="status-display" class="status-box idle">
+            <div id="status-main">MENUNGGU INPUT</div>
+            <div id="status-reason" style="font-size: 0.85rem; margin-top: 5px; font-weight: normal; opacity: 0.9;"></div>
+        </div>
+    </section>
+
+    <section class="panel log-panel">
+        <div class="panel-header">Riwayat Transisi Stack</div>
+        <div id="log-container" class="log-viewer">
+            <p class="empty-msg">Belum ada aktivitas transisi yang terekam.</p>
+        </div>
+    </section>
+    </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
