@@ -29,20 +29,6 @@ melalui 7-tuple sebagai berikut:
 
 ## 3. Penjelasan Struktur Kode Program
 
-### 3.1. Struktur Antarmuka (HTML & CSS)
-
-    Arsitektur antarmuka dibangun menggunakan HTML5 untuk menentukan elemen
-    struktural dan CSS3 untuk pengaturan tata letak. Penggunaan metode flexbox
-    memastikan bahwa elemen konfigurasi dan elemen pengujian string tersaji secara
-    paralel. Sistem pewarnaan digunakan sebagai indikator status validasi: warna
-    hijau melambangkan diterimanya untai (Accepted), sedangkan warna merah
-    melambangkan penolakan untai (Rejected).
-
-### 3.2. Logika Mesin (JavaScript)
-
-    Logika pemrosesan string diimplementasikan dalam berkas script.js dengan urutan
-    operasional sebagai berikut:
-
     1.  Inisialisasi: Program menetapkan state awal pada q_0 dan memasukkan simbol Z
         ke dalam struktur data stack.
     2.  Proses Push (State q0 dan q1):
@@ -62,24 +48,7 @@ melalui 7-tuple sebagai berikut:
         - Jika input habis sebelum stack kosong, atau stack kosong sebelum input
             habis, maka mesin secara otomatis menolak untai tersebut.
 
-## 4. Instruksi Pengoperasian
-
-### 4.1. Persiapan Lokal
-
-    1.  Pastikan seluruh berkas (index.html, style.css, dan script.js) berada dalam
-        satu direktori yang sama.
-    2.  Jalankan berkas index.html menggunakan peramban web (browser) seperti Google
-        Chrome, Mozilla Firefox, atau Microsoft Edge.
-
-    4.2. Prosedur Pengujian
-
-    1.  Masukkan untai yang ingin diuji pada kolom "Masukkan string".
-    2.  Klik tombol "CEK VALIDASI".
-    3.  Perhatikan area "URUTAN TRANSISI" untuk melihat detail langkah demi langkah
-        perubahan state dan kondisi stack.
-    4.  Hasil akhir akan ditampilkan pada banner status di bagian tengah layar.
-
-## 5. Contoh Kasus Uji
+## 4. Contoh Kasus Uji
 
 | Input | Hasil    | Analisis                                             |
 | ----- | -------- | ---------------------------------------------------- |
