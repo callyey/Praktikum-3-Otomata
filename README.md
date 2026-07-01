@@ -1,4 +1,10 @@
-**1. Pendahuluan**
+# Praktikum 3
+| NRP | Nama    | 
+| ----- | -------- | 
+|5025241073    | Nabilah Bunga Sulistia | 
+|5025241086    | Callista Fidelya Roba Gultom | 
+
+## 1. Pendahuluan
 
 Program ini merupakan sebuah aplikasi berbasis web yang dirancang untuk
 mensimulasikan mekanisme kerja mesin Pushdown Automata (PDA). Fokus utama dari
@@ -6,7 +12,9 @@ simulator ini adalah untuk melakukan proses validasi terhadap untai (string)
 yang tergolong dalam bahasa bebas konteks (Context-Free Language) dengan notasi
 matematis L = {aⁿ bⁿ | n ≥ 1}.
 
-**2. Definisi Formal Komponen PDA**
+Implementasi : [Praktikum 3](https://callyey.github.io/Praktikum-3-Otomata/)
+
+## 2. Definisi Formal Komponen PDA
 
 Mesin yang diimplementasikan dalam kode program ini didefinisikan secara formal
 melalui 7-tuple sebagai berikut:
@@ -19,9 +27,9 @@ melalui 7-tuple sebagai berikut:
   - Z0 (Simbol Awal Stack): Z
   - F (State Penerima): \{q_3\}
 
-**3. Penjelasan Struktur Kode Program**
+## 3. Penjelasan Struktur Kode Program
 
-    3.1. Struktur Antarmuka (HTML & CSS)
+### 3.1. Struktur Antarmuka (HTML & CSS)
 
     Arsitektur antarmuka dibangun menggunakan HTML5 untuk menentukan elemen
     struktural dan CSS3 untuk pengaturan tata letak. Penggunaan metode flexbox
@@ -30,7 +38,7 @@ melalui 7-tuple sebagai berikut:
     hijau melambangkan diterimanya untai (Accepted), sedangkan warna merah
     melambangkan penolakan untai (Rejected).
 
-    3.2. Logika Mesin (JavaScript)
+### 3.2. Logika Mesin (JavaScript)
 
     Logika pemrosesan string diimplementasikan dalam berkas script.js dengan urutan
     operasional sebagai berikut:
@@ -54,9 +62,9 @@ melalui 7-tuple sebagai berikut:
         - Jika input habis sebelum stack kosong, atau stack kosong sebelum input
             habis, maka mesin secara otomatis menolak untai tersebut.
 
-**4. Instruksi Pengoperasian**
+## 4. Instruksi Pengoperasian
 
-    4.1. Persiapan Lokal
+### 4.1. Persiapan Lokal
 
     1.  Pastikan seluruh berkas (index.html, style.css, dan script.js) berada dalam
         satu direktori yang sama.
@@ -71,7 +79,7 @@ melalui 7-tuple sebagai berikut:
         perubahan state dan kondisi stack.
     4.  Hasil akhir akan ditampilkan pada banner status di bagian tengah layar.
 
-**5. Contoh Kasus Uji**
+## 5. Contoh Kasus Uji
 
 | Input | Hasil    | Analisis                                             |
 | ----- | -------- | ---------------------------------------------------- |
@@ -80,4 +88,3 @@ melalui 7-tuple sebagai berikut:
 | aaabb | DITOLAK  | Jumlah 'a' lebih banyak dari 'b'.                    |
 | aabbb | DITOLAK  | Jumlah 'b' lebih banyak dari 'a'.                    |
 | ba    | DITOLAK  | Urutan karakter tidak sesuai dengan definisi bahasa. |
-
